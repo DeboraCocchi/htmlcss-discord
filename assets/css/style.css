@@ -6,7 +6,6 @@
 
 body{
   font-family: 'Work Sans', sans-serif;
-  background-color:#99a4a4;
 }
 
 .container{
@@ -186,6 +185,18 @@ main .columns{
 .text-content p{
   font-size:1.2vw;
   line-height:1.5vw;
+}
+
+.waves, .waves-switch{
+  display: block;
+  height:10vh;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-image: url('../img/wave.svg');
+}
+
+.waves-switch{
+  transform:scaleY(-1);
 }
 
 .cta-content.grey{
