@@ -16,6 +16,9 @@ body{
   text-align:center;
 }
 
+button{
+  border-radius: 25px;
+}
 
 /* header */
 
@@ -55,8 +58,9 @@ header .menu a{
   color:white;
 }
 
-header .menu a:hover,{
+header .menu a:hover, footer a:hover{
   text-decoration: underline;
+  font-weight:bold;
 }
 
 header #log-in-header{
@@ -64,7 +68,6 @@ header #log-in-header{
   color:black;
   background-color:white;
   padding:10px 15px;
-  border-radius: 20px;
 }
 
 header #log-in-header:hover, button:hover{
@@ -100,15 +103,15 @@ header #log-in-header:hover, button:hover{
 
 .jumbotron .jumbo-content h1{
   font-weight:800;
-  font-size:35px;
+  font-size:38px;
 }
 
 .jumbotron .jumbo-content p{
-  font-size:20px;
+  font-size:22px;
   line-height: 1.8rem;
 }
 
-.jumbotron .jumbo-buttons button, .cta.container button{
+.jumbotron .jumbo-buttons button, #cta-btn-download, .footer-stripe button{
   padding:15px 20px;
   margin:0px 20px;
   font-size:110%;
@@ -190,7 +193,7 @@ main .columns{
   justify-content: center;
 }
 
-.cta *{
+.cta h2, .cta h3, .cta p, .cta img{
   margin-top:20px;
 }
 
@@ -206,14 +209,15 @@ main .columns{
   height:700px;
 }
 
-.cta-content .stars-bg{
+.cta.text-content.container .stars-bg{
   background-image: url('../img/stars.svg');
   background-size: contain;
   background-position: center;
 }
 
-.stars-bg button{
-  
+#cta-btn-download, .footer-stripe button{
+  background-color: #8ea1e1;
+  color:white;
 }
 
 /* footer */
@@ -233,13 +237,12 @@ footer .foot-area{
   text-align:left;
   color:white;
 }
+footer .foot-area.big{
+  width:33%;
+}
 
 footer .foot-area.little{
   width:calc( 66% / 4);
-}
-
-footer .foot-area.big{
-  width:33%;
 }
 
 footer .foot-area.big *{
@@ -249,21 +252,37 @@ footer .foot-area.big *{
 .foot-area h3, .foot-area h5{
   color:#6c80ca;
   font-weight: bold;
+  font-size:120%;
+  margin-bottom:15px;
+}
+
+.foot-area h3{
+  font-size:25px;
 }
 
 #flag, #social-icons{
-  border:1px dashed white;
-  width: fit-content;
+  color:white;
+  font-size:120%;
+}
+
+#flag img{
+  height:18px;
+  vertical-align: middle;
+}
+
+#social-icons a{
+  margin-right:18px;
 }
 
 footer .foot-area.little ul{
   list-style: none;
 }
 
-footer .foot-area.little ul a{
+footer a{
   text-decoration: none;
   color:white;
-  font-size:90%;
+  display: inline-block;
+  margin-bottom:10px;
 }
 
 footer hr{
@@ -277,6 +296,4 @@ footer .footer-stripe{
   align-items: center;
 }
 
-footer .footer-stripe button{
-  padding:10px 15px;
-}
+
