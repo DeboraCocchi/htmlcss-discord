@@ -1,0 +1,251 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  background-color:#99a4a4;
+}
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  width:70%;
+  text-align:center;
+}
+
+
+/* header */
+
+header{
+  background-color: #3161e0;
+  color:white;
+  height:80px;
+  padding:15px;
+}
+
+header .header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  padding:5px;
+  color:white;
+}
+
+header .menu ul{
+  list-style: none;
+  display:flex;
+  padding:10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .menu ul li{
+  margin:0 10px;
+}
+
+header .menu a{
+  text-decoration: none;
+  color:white;
+}
+
+header .menu a:hover{
+  text-decoration: underline;
+}
+
+header #log-in-header{
+  text-decoration: none;
+  color:black;
+  background-color:white;
+  padding:10px 15px;
+  border-radius: 20px;
+}
+
+header #log-in-header:hover{
+  text-decoration: underline;
+  transform: scale(105%);
+}
+
+/* jumbotron */
+
+.jumbotron{
+  background-image:url('../img/jumbo.png');
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items: center;
+}
+
+.jumbotron .jumbo-content{
+  margin:0 auto;
+  padding:20px;
+  text-align: center;
+  width:90%;
+  max-width:800px;
+  color:white;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.jumbotron .jumbo-content *{
+  margin:15px 0;
+}
+
+.jumbotron .jumbo-content h1{
+  font-weight:800;
+  font-size:35px;
+}
+
+.jumbotron .jumbo-content p{
+  font-size:20px;
+  line-height: 1.8rem;;
+}
+
+.jumbotron .jumbo-content button, .cta.container button{
+  padding:15px 20px;
+  font-size:110%;
+}
+
+/* main */
+
+.main-content{
+  /* h da togliere */
+  height:500px;
+  padding:30px;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}
+
+.white{
+  background-color: white;
+}
+
+.grey{
+  background-color: #f6f6f6;
+}
+
+main .columns{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col{
+  padding:30px; 
+}
+
+.narrow.col{
+  width:35%;
+  text-align: left;
+}
+
+.large.col{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dummy-img{
+  height:350px;
+  width:400px;
+  background-color: darkviolet;
+}
+
+.text-content h2{
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta-content.grey{
+  padding:40px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.cta *{
+  margin:20px 0;
+}
+
+.cta.container h2, .cta.container p{
+  margin: 20px 15px;
+}
+
+.cta.container .second-dummy-img{
+  height:400px;
+  background-color: violet;
+  color:white;
+}
+
+/* footer */
+
+footer{
+  background-color: #23272a;
+  padding: 40px 0px;
+}
+
+.footer-menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:30px;
+}
+
+footer .foot-area{
+  text-align:left;
+  color:white;
+}
+
+footer .foot-area.little{
+  width:calc( 66% / 4);
+}
+
+footer .foot-area.big{
+  width:33%;
+}
+
+footer .foot-area.big *{
+  margin-bottom:15px;
+}
+
+.foot-area h3, .foot-area h5{
+  color:#6c80ca;
+  font-weight: bold;
+}
+
+#flag, #social-icons{
+  border:1px dashed white;
+  width: fit-content;
+}
+
+footer .foot-area.little ul{
+  list-style: none;
+}
+
+footer .foot-area.little ul a{
+  text-decoration: none;
+  color:white;
+  font-size:90%;
+}
+
+footer hr{
+  border-color: #6c80ca;
+  margin-bottom:30px;
+}
+
+footer .footer-stripe{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-stripe button{
+  padding:10px 15px;
+}
